@@ -15,12 +15,13 @@ int main() {
     {
         printf("%d",a[i]);
     }
+    int count=0;
     for(i=0;i<n;i++)
     {
         for(j=i+1;j<n;j++)
         {
             if(a[i]==a[j])
-            {
+            {    count+=1;
                 for(k=j;k<n-1;k++)
                 {
                     a[k]=a[k+1];
@@ -35,6 +36,8 @@ int main() {
     {
         printf("%d",a[i]);
     }
+    printf("\n%d number's are dublicated values");
 
     return 0;
+
 }
